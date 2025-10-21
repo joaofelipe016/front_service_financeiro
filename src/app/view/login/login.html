@@ -1,5 +1,22 @@
-<div id="container" class="w-screen h-screen bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient">
-  <div id="login">
+<div id="container" class="w-screen h-screen bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient relative overflow-hidden">
+
+  <nav class="flex py-2 px-6 gap-4 justify-end relative">
+      <button class="shadow-lg hover:shadow-lg hover:shadow-gray-800 px-2 py-2 rounded-lg text-white/50 hover:text-white/90 font-semibold text-lg
+       bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient">
+        <div class="bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient bg-clip-text text-transparent">
+          Fazer cadastro
+        </div>
+      </button>
+
+    <button class="shadow-lg hover:shadow-lg hover:shadow-gray-800 px-2 py-2 rounded-lg text-white/50 hover:text-white/90 font-semibold text-lg
+       bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient">
+      <div class="bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient bg-clip-text text-transparent">
+        Fazer login
+      </div>
+    </button>
+  </nav>
+
+  <div id="login" class="absolute inset-0 hidden">
     <header class="flex flex-col justify-center items-center pt-24 gap-6 bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient bg-clip-text text-transparent">
       <h1 class="text-3xl md:text-5xl">Bem-vindo de volta!!</h1>
 
@@ -44,12 +61,10 @@
         <span class="mx-4 text-sm font-medium">ou</span>
 
         <div class="w-20 border-t border-white/40 mt-1"></div>
-
-        <span></span>
       </div>
     </header>
 
-    <form class="flex flex-col gap-8 md:gap-16 mt-16 justify-center items-center">
+    <form class="flex flex-col gap-6 md:gap-16 mt-16 justify-center items-center">
       <input type="text" placeholder="Email"
       class="max-w-[80%] md:max-w-[40%]
       outline-none
@@ -79,16 +94,82 @@
 
     <div id="button" class="flex justify-center items-center mt-16">
       <button class="shadow-lg hover:shadow-lg hover:shadow-gray-800 px-8 py-2 rounded-lg text-white/50 hover:text-white/90 font-semibold text-lg
-       bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient">
-        <div class="bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient bg-clip-text text-transparent">
+       bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient">
+        <div class="bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient bg-clip-text text-transparent">
           Entrar
         </div>
       </button>
     </div>
-
   </div>
 
-  <div id="cadastro">
+  <div id="cadastro" class="flex flex-col justify-center items-center absolute inset-0">
+    <header class="flex flex-col justify-center items-center pt-18 gap-6 bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient bg-clip-text text-transparent">
+      <h1 class="text-3xl md:text-5xl">Ainda não tem uma conta?</h1>
 
+      <h2 class="font-light md:text-lg">cadastre-se agora mesmo</h2>
+    </header>
+
+    <form action="" class="flex flex-col gap-6 md:gap-4 mt-16 justify-center items-center w-full">
+      <input type="text" placeholder="Nome"
+      class="max-w-[80%] md:max-w-[40%]
+      outline-none
+      w-full py-4 px-4
+      rounded-lg
+      bg-white/20
+      placeholder:text-white/40
+      focus:bg-white/40
+      focus:placeholder:text-white/60
+      shadow-lg
+      focus:shadow-xl
+      focus:shadow-gray-800">
+
+      <input type="text" placeholder="Email"
+      class="max-w-[80%] md:max-w-[40%]
+      outline-none
+      w-full py-4 px-4
+      rounded-lg
+      bg-white/20
+      placeholder:text-white/40
+      focus:bg-white/40
+      focus:placeholder:text-white/60
+      shadow-lg
+      focus:shadow-xl
+      focus:shadow-gray-800">
+
+      <input type="password" placeholder="Senha"
+      class="max-w-[80%] md:max-w-[40%]
+      outline-none
+      w-full py-4 px-4
+      rounded-lg
+      bg-white/20
+      placeholder:text-white/40
+      focus:bg-white/40
+      focus:placeholder:text-white/60
+      shadow-lg
+      focus:shadow-xl
+      focus:shadow-gray-800">
+
+      <input type="password" placeholder="Confirmar senha"
+      class="max-w-[80%] md:max-w-[40%]
+      outline-none
+      w-full py-4 px-4
+      rounded-lg
+      bg-white/20
+      placeholder:text-white/40
+      focus:bg-white/40
+      focus:placeholder:text-white/60
+      shadow-lg
+      focus:shadow-xl
+      focus:shadow-gray-800">
+    </form>
+
+    <div id="button" class="flex justify-center items-center mt-16 gap-4">
+      <button class="shadow-lg hover:shadow-lg hover:shadow-gray-800 px-8 py-2 rounded-lg text-white/50 hover:text-white/90 font-semibold text-lg
+       bg-gradient-to-r from-cyan-tertiary via-cyan-secondary to-cyan-primary bg-300% animate-gradient">
+        <div class="bg-gradient-to-r from-cyan-primary via-cyan-secondary to-cyan-tertiary bg-300% animate-gradient bg-clip-text text-transparent">
+          cadastrar-se
+        </div>
+      </button>
+    </div>
   </div>
 </div>
