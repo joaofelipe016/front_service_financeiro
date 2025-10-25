@@ -1,0 +1,95 @@
+/* Garantir que o componente tenha o tamanho correto */
+:host {
+  display: block;
+  width: 100%;
+}
+
+/* Container principal */
+:host .divider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 32px auto 16px auto;
+  position: relative;
+}
+
+/* Linhas do divisor */
+:host .divider-line-left,
+:host .divider-line-right {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg,
+    #7CD9CE 0%,
+    #2E7588 25%,
+    #061C36 50%,
+    #2E7588 75%,
+    #7CD9CE 100%);
+  background-size: 300% 100%;
+  animation: gradient 20s ease infinite;
+  position: relative;
+  box-shadow: 0 0 8px rgba(44, 117, 136, 0.4);
+}
+
+/* Texto do divisor */
+:host .divider-text {
+  background: linear-gradient(45deg,
+    #7CD9CE 0%,
+    #2E7588 25%,
+    #061C36 50%,
+    #2E7588 75%,
+    #7CD9CE 100%);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 16px;
+  white-space: nowrap;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  text-shadow: none;
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 640px) {
+  :host .divider-wrapper {
+    max-width: 280px;
+    margin: 24px auto 12px auto;
+  }
+
+  :host .divider-text {
+    font-size: 11px;
+    padding: 0 12px;
+    border-radius: 10px;
+  }
+
+  :host .divider-line-left,
+  :host .divider-line-right {
+    height: 1px;
+  }
+}
+
+/* Para telas maiores */
+@media (min-width: 768px) {
+  :host .divider-wrapper {
+    max-width: 400px;
+    margin: 40px auto 20px auto;
+  }
+
+  :host .divider-text {
+    font-size: 14px;
+    padding: 0 20px;
+    border-radius: 14px;
+  }
+
+  :host .divider-line-left,
+  :host .divider-line-right {
+    height: 2px;
+  }
+}
+
