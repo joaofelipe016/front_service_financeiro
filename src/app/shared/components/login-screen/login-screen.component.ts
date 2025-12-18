@@ -34,7 +34,7 @@ export interface LoginForm {
     >
       <app-header
         title="Bem-vindo de volta!!"
-        subtitle="entre com suas redes socias"
+        subtitle="faça login com seu email e senha"
       />
 
       <form
