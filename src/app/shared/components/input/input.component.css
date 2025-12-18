@@ -48,3 +48,22 @@
   display: block;
   width: 100%;
 }
+
+/* Estilos para o botão de mostrar/ocultar senha */
+:host .relative {
+  position: relative;
+  width: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+:host button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+:host button svg {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+:host button:hover svg {
+  transform: scale(1.1);
+}
